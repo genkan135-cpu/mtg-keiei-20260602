@@ -3,101 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SATOWA 経営計画ディスカッション資料 — 事業計画v2.0と黒字化3パターン（2026-06-02）</title>
+<title>SATOWA 長田さんMTG 統合資料 — リトリートα以降の共有 ＋ 経営計画v2.0と黒字化3パターン（2026-06-02）</title>
 <style>
-:root{
-  --navy:#2E5C8A; --navy2:#6B8FB7; --green:#4A7C4A; --amber:#C68A1C; --red:#8C2A2A;
-  --ink:#222; --grey:#666; --line:#DDD;
-}
+:root{--navy:#2E5C8A;--navy2:#6B8FB7;--green:#4A7C4A;--amber:#C68A1C;--red:#8C2A2A;--ink:#222;--grey:#666;--line:#DDD;}
 *{box-sizing:border-box;}
-body{
-  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
-  color:var(--ink); margin:0; background:#F7F8FA; line-height:1.7; font-size:15px;
-}
-header{
-  background:linear-gradient(135deg,#1F4468,#2E5C8A 55%,#6B8FB7);
-  color:#fff; padding:26px 22px 20px;
-}
-header h1{margin:0 0 6px; font-size:22px; letter-spacing:.02em;}
-header .sub{font-size:13px; opacity:.92;}
-header .meta{font-size:12px; opacity:.82; margin-top:10px;}
-header .members{margin-top:10px; font-size:12.5px;}
-header .members span{display:inline-block; background:rgba(255,255,255,.16); border-radius:12px; padding:3px 10px; margin:3px 4px 0 0;}
-/* tabs */
-.tabbar{
-  position:sticky; top:0; z-index:20; background:#fff; border-bottom:2px solid var(--navy);
-  display:flex; flex-wrap:wrap; gap:0; box-shadow:0 2px 6px rgba(0,0,0,.06);
-}
-.tabbar button{
-  font-family:inherit; font-size:13px; font-weight:600; border:0; background:transparent;
-  color:var(--grey); padding:13px 15px; cursor:pointer; border-bottom:3px solid transparent;
-  white-space:nowrap;
-}
-.tabbar button .n{display:inline-block; width:20px; height:20px; line-height:20px; text-align:center;
-  background:#E8EEF5; color:var(--navy); border-radius:50%; font-size:11px; margin-right:6px;}
-.tabbar button:hover{color:var(--navy); background:#F4F7FB;}
-.tabbar button.active{color:var(--navy); border-bottom-color:var(--navy);}
-.tabbar button.active .n{background:var(--navy); color:#fff;}
-main{max-width:920px; margin:0 auto; padding:22px 18px 80px;}
-.tab{display:none; animation:fade .25s ease;}
+body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;color:var(--ink);margin:0;background:#F7F8FA;line-height:1.7;font-size:15px;}
+header{background:linear-gradient(135deg,#1F4468,#2E5C8A 55%,#6B8FB7);color:#fff;padding:24px 22px 18px;}
+header h1{margin:0 0 6px;font-size:21px;letter-spacing:.02em;}
+header .sub{font-size:13px;opacity:.92;}
+header .meta{font-size:12px;opacity:.82;margin-top:9px;}
+header .members{margin-top:9px;font-size:12.5px;}
+header .members span{display:inline-block;background:rgba(255,255,255,.16);border-radius:12px;padding:3px 10px;margin:3px 4px 0 0;}
+/* group toggle */
+.groupbar{position:sticky;top:0;z-index:30;display:flex;background:#13314d;}
+.groupbar button{flex:1;font-family:inherit;font-size:14px;font-weight:700;border:0;background:transparent;color:#9db8d4;padding:13px 8px;cursor:pointer;border-bottom:3px solid transparent;}
+.groupbar button.active{color:#fff;background:#2E5C8A;border-bottom-color:#FFD27A;}
+/* sub tabs */
+.tabbar{position:sticky;top:46px;z-index:20;background:#fff;border-bottom:2px solid var(--navy);display:flex;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+.tabbar button{font-family:inherit;font-size:12.5px;font-weight:600;border:0;background:transparent;color:var(--grey);padding:11px 12px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;}
+.tabbar button .n{display:inline-block;width:19px;height:19px;line-height:19px;text-align:center;background:#E8EEF5;color:var(--navy);border-radius:50%;font-size:10.5px;margin-right:5px;}
+.tabbar button:hover{color:var(--navy);background:#F4F7FB;}
+.tabbar button.active{color:var(--navy);border-bottom-color:var(--navy);}
+.tabbar button.active .n{background:var(--navy);color:#fff;}
+main{max-width:920px;margin:0 auto;padding:20px 18px 80px;}
+.tab{display:none;animation:fade .25s ease;}
 .tab.active{display:block;}
-@keyframes fade{from{opacity:0; transform:translateY(4px);}to{opacity:1;transform:none;}}
-h2{font-size:19px; color:var(--navy); border-left:6px solid var(--navy); padding-left:12px; margin:6px 0 14px;}
-h3{font-size:15.5px; color:var(--navy); margin:22px 0 8px; padding-bottom:5px; border-bottom:1px dashed #C6D3E2;}
-h4{font-size:14px; margin:16px 0 6px; color:#1a1a1a;}
+@keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+h2{font-size:19px;color:var(--navy);border-left:6px solid var(--navy);padding-left:12px;margin:6px 0 14px;}
+h3{font-size:15.5px;color:var(--navy);margin:22px 0 8px;padding-bottom:5px;border-bottom:1px dashed #C6D3E2;}
+h4{font-size:14px;margin:16px 0 6px;color:#1a1a1a;}
 p{margin:8px 0;}
-small{color:var(--grey);}
-.lead{background:#fff; border:1px solid #E2E8F0; border-left:5px solid var(--navy); border-radius:6px; padding:14px 16px; margin:12px 0;}
-.card{background:#fff; border:1px solid #E6EAF0; border-radius:8px; padding:16px 18px; margin:14px 0; box-shadow:0 1px 3px rgba(0,0,0,.04);}
-table{width:100%; border-collapse:collapse; margin:12px 0; font-size:13px; background:#fff;}
-th{background:var(--navy); color:#fff; padding:8px 9px; text-align:right; font-weight:600;}
+small,.note{color:var(--grey);font-size:12px;}
+.lead{background:#fff;border:1px solid #E2E8F0;border-left:5px solid var(--navy);border-radius:6px;padding:14px 16px;margin:12px 0;}
+.card{background:#fff;border:1px solid #E6EAF0;border-radius:8px;padding:15px 17px;margin:13px 0;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;background:#fff;}
+th{background:var(--navy);color:#fff;padding:8px 9px;text-align:right;font-weight:600;}
 th.l{text-align:left;}
-td{padding:7px 9px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap;}
-td.l{text-align:left; white-space:normal;}
+td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;}
+td.l{text-align:left;white-space:normal;}
+td.c{text-align:center;}
 tr:nth-child(even) td{background:#FAFBFC;}
-.pos{color:#1c6b1c; font-weight:700;}
-.neg{color:#b02525; font-weight:700;}
-.tot td{background:#EAF1F9 !important; font-weight:700; border-top:2px solid var(--navy);}
-ul,ol{margin:8px 0; padding-left:22px;}
-li{margin:5px 0;}
-.callout{border-radius:6px; padding:13px 16px; margin:12px 0; font-size:13.5px;}
-.c-blue{background:#F4F7FB; border-left:4px solid var(--navy);}
-.c-amber{background:#FFF8E7; border-left:4px solid var(--amber);}
-.c-green{background:#F0F7F0; border-left:4px solid var(--green);}
-.c-red{background:#FBEEEE; border-left:4px solid var(--red);}
-.tag{display:inline-block; padding:2px 9px; border-radius:11px; font-size:11px; font-weight:700; margin-right:5px;}
-.t-blue{background:#E8EEF5; color:var(--navy);} .t-amber{background:#FBEFD4; color:#8A5A0E;}
-.t-green{background:#DEEDDF; color:#2F5A2F;} .t-red{background:#F5DDDD; color:#8C2A2A;}
-.grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
-.grid3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px;}
+.pos{color:#1c6b1c;font-weight:700;} .neg{color:#b02525;font-weight:700;}
+.tot td{background:#EAF1F9 !important;font-weight:700;border-top:2px solid var(--navy);}
+ul,ol{margin:8px 0;padding-left:22px;} li{margin:5px 0;}
+.callout{border-radius:6px;padding:13px 16px;margin:12px 0;font-size:13.5px;}
+.c-blue{background:#F4F7FB;border-left:4px solid var(--navy);}
+.c-amber{background:#FFF8E7;border-left:4px solid var(--amber);}
+.c-green{background:#F0F7F0;border-left:4px solid var(--green);}
+.c-red{background:#FBEEEE;border-left:4px solid var(--red);}
+.quote{font-size:17px;color:var(--navy);font-weight:700;background:#EAF1F9;border-left:5px solid var(--navy);border-radius:5px;padding:14px 20px;margin:12px 0;}
+.tag{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11px;font-weight:700;margin-right:5px;}
+.t-blue{background:#E8EEF5;color:var(--navy);} .t-amber{background:#FBEFD4;color:#8A5A0E;}
+.t-green{background:#DEEDDF;color:#2F5A2F;} .t-red{background:#F5DDDD;color:#8C2A2A;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
 @media(max-width:680px){.grid2,.grid3{grid-template-columns:1fr;}}
-.kpi{background:#fff; border:1px solid #E6EAF0; border-radius:8px; padding:12px 14px; text-align:center;}
-.kpi .v{font-size:22px; font-weight:800; color:var(--navy);}
-.kpi .v.neg{color:#b02525;} .kpi .v.pos{color:#1c6b1c;}
-.kpi .k{font-size:11.5px; color:var(--grey); margin-top:3px;}
-.flowbox{border:2px solid var(--navy); border-radius:8px; padding:10px 14px; background:#EAF1F9; text-align:center; font-size:13px; font-weight:600;}
-.arrow{text-align:center; font-size:20px; color:#888; margin:2px 0;}
-.note{font-size:12px; color:var(--grey); margin-top:4px;}
-footer{max-width:920px; margin:0 auto; padding:18px; color:var(--grey); font-size:12px; border-top:1px solid var(--line);}
-.disc{background:#fff; border:1px solid #E6EAF0; border-radius:8px; padding:14px 16px; margin:12px 0;}
-.disc .q{font-weight:700; color:var(--navy); font-size:14.5px;}
-.badge{display:inline-block; background:var(--navy); color:#fff; font-size:11px; padding:2px 8px; border-radius:4px; margin-left:6px;}
+.kpi{background:#fff;border:1px solid #E6EAF0;border-radius:8px;padding:12px 14px;text-align:center;}
+.kpi .v{font-size:22px;font-weight:800;color:var(--navy);} .kpi .v.neg{color:#b02525;} .kpi .v.pos{color:#1c6b1c;}
+.kpi .k{font-size:11.5px;color:var(--grey);margin-top:3px;}
+.flowbox{border:2px solid var(--navy);border-radius:8px;padding:10px 14px;background:#EAF1F9;text-align:center;font-size:13px;font-weight:600;}
+.arrow{text-align:center;font-size:20px;color:#888;margin:2px 0;}
+.scheme{border:2px solid var(--navy);border-radius:8px;padding:13px 16px;margin:8px 0;}
+.scheme.green{border-color:var(--green);background:#F5FAF5;}
+.scheme.blue{background:#F4F7FB;}
+.scheme .t{font-weight:700;font-size:14.5px;margin-bottom:4px;}
+.disc{background:#fff;border:1px solid #E6EAF0;border-radius:8px;padding:14px 16px;margin:12px 0;}
+.disc .q{font-weight:700;color:var(--navy);font-size:14.5px;}
+.badge{display:inline-block;background:var(--navy);color:#fff;font-size:11px;padding:2px 8px;border-radius:4px;margin-left:6px;}
+footer{max-width:920px;margin:0 auto;padding:18px;color:var(--grey);font-size:12px;border-top:1px solid var(--line);}
 </style>
 </head>
 <body>
 <header>
-  <h1>SATOWA 経営計画ディスカッション資料</h1>
-  <div class="sub">事業計画 v2.0（シナリオ正式化）の要約・詳細 ＋ 黒字化3パターンのシミュレーション ＋ 銀行・財務プロ視点</div>
-  <div class="meta">2026年6月2日　今夜のMTG討議用　|　正本：SATOWA西日暮里_事業計画v2.0_シナリオ正式化（玄氣Drive 學童保育/）</div>
-  <div class="members">
-    討議メンバー：
-    <span>長田さん（校長）</span><span>昌美さん（理事長）</span><span>飯塚玄氣（事務局）</span><span>藤原宗賢（としかつ）さん（國創りメンバー）</span>
-  </div>
+  <h1>SATOWA 長田さんMTG 統合資料</h1>
+  <div class="sub">［共有］リトリートα以降の歩みと新スキーム　＋　［経営］事業計画v2.0の要約・詳細と黒字化3パターン</div>
+  <div class="meta">2026年6月2日　今夜のMTG討議用　|　正本Excel：SATOWA西日暮里_事業計画v2.0_シナリオ正式化</div>
+  <div class="members">討議メンバー：<span>長田さん（校長）</span><span>昌美さん（理事長）</span><span>飯塚玄氣（事務局）</span><span>藤原宗賢（としかつ）さん</span></div>
 </header>
 
-<nav class="tabbar" id="tabbar">
+<div class="groupbar" id="groupbar">
+  <button class="active" data-g="share">📋 MTG共有資料</button>
+  <button data-g="keiei">📊 経営計画ディスカッション</button>
+</div>
+
+<!-- SHARE sub-tabs -->
+<nav class="tabbar" id="bar-share">
+  <button class="active" data-t="s1"><span class="n">1</span>世界観</button>
+  <button data-t="s2"><span class="n">2</span>19日間の歩み</button>
+  <button data-t="s3"><span class="n">3</span>新スキーム</button>
+  <button data-t="s4"><span class="n">4</span>銀行融資</button>
+  <button data-t="s5"><span class="n">5</span>擦り合わせ</button>
+  <button data-t="s6"><span class="n">6</span>4者会議</button>
+  <button data-t="s7"><span class="n">7</span>6/6報告会</button>
+</nav>
+<!-- KEIEI sub-tabs -->
+<nav class="tabbar" id="bar-keiei" hidden>
   <button class="active" data-t="t1"><span class="n">1</span>サマリー</button>
-  <button data-t="t2"><span class="n">2</span>v2.0 詳細</button>
+  <button data-t="t2"><span class="n">2</span>v2.0詳細</button>
   <button data-t="t3"><span class="n">A</span>学童だけで黒字化</button>
   <button data-t="t4"><span class="n">B</span>学童＋神社カフェ</button>
   <button data-t="t5"><span class="n">C</span>全体ポートフォリオ</button>
@@ -107,141 +109,270 @@ footer{max-width:920px; margin:0 auto; padding:18px; color:var(--grey); font-siz
 
 <main>
 
-<!-- ============ TAB 1 サマリー ============ -->
-<section class="tab active" id="t1">
-  <h2>エグゼクティブ・サマリー</h2>
-  <div class="lead">
-    <strong>結論を一言で</strong>：事業計画は v1.3（学童単体）から <strong>v2.0 の「3層構造」</strong>へ進化した。
-    <strong>学童“単体”では2年間赤字で、5年たっても累計はマイナス</strong>。黒字を生むのは <strong>②法人その他（賃貸＋神社事業）</strong>であり、
-    さらに <strong>③クォンタム（UE・ディマティーニ等の個人事業）</strong>が上に乗る。
-    今夜の核心は <strong>「どのパターンで黒字を成立させるか」と「それを銀行・6/6報告会にどう正直に見せるか」</strong>。
-  </div>
+<!-- ====================== SHARE GROUP ====================== -->
 
-  <h3>3層構造（v2.0の骨格）</h3>
+<!-- s1 -->
+<section class="tab active grp-share" id="s1">
+  <h2>1. リトリートαで作った世界観（5/14 確定版）</h2>
+  <h3>確定キャッチコピー</h3>
+  <div class="quote">文化を、知識ではなく体験として継承できる学童</div>
+  <p class="note">日本の伝統文化や生活習慣の体験を通じて、個々の才能を磨くイノベーティブ学童。本質的な文化継承と探求カリキュラム、五感・五育を通じて、子どもの学力・才能・人間力を開花させる、放課後の居場所。</p>
+  <h3>三力 <small>（長田さん由来の中核フレーム）</small></h3>
   <div class="grid3">
-    <div class="card"><span class="tag t-blue">①</span><strong>学童グループ</strong><p class="note">学童＋1階イベント＋乳幼児サブスク。<br>主体＝SATOWA法人。定員30名（地下18＋1階12）</p></div>
-    <div class="card"><span class="tag t-green">②</span><strong>法人その他</strong><p class="note">賃貸4戸＋神社事業（お守り/おみくじAI/お石/滝行/大和風水）＋物販。<br>主体＝SATOWA法人</p></div>
-    <div class="card"><span class="tag t-amber">③</span><strong>クォンタム個人</strong><p class="note">ディマティーニ・バリューファクター・UE・コーチング等。<br>主体＝昌美 個人事業（法人と別）</p></div>
+    <div class="card"><div class="tag t-blue">学力</div><p class="note">探究を通じて獲得する、生きた知の力</p></div>
+    <div class="card"><div class="tag t-blue">才能</div><p class="note">体験から発見する、その子だけの強み</p></div>
+    <div class="card"><div class="tag t-blue">人間力</div><p class="note">伝統文化に触れて育つ、自立と他者への配慮</p></div>
   </div>
+  <h3>公益財団クロノス向け「3大義」</h3>
+  <table>
+    <tr><th style="width:40px;">#</th><th class="l">大義</th></tr>
+    <tr><td class="c">①</td><td class="l"><strong>文化資産の再生</strong> ─ 神社境内を「文化の倉庫」から「次世代育成の場」へ</td></tr>
+    <tr><td class="c">②</td><td class="l"><strong>非認知能力の体験的育成</strong> ─ 祈り・季節行事・暮らし・対話・AIを横断するPBL</td></tr>
+    <tr><td class="c">③</td><td class="l"><strong>都市の小1の壁の解消</strong> ─ 東京都心の共働き家庭への放課後インフラ</td></tr>
+  </table>
+  <h3>事業計画（リトリートα時点 v1.3）のサマリー</h3>
+  <table>
+    <tr><th>定員</th><th>月額</th><th>営業時間</th><th>年商</th><th>営業利益</th></tr>
+    <tr><td class="c"><strong>18名</strong></td><td class="c">7-10万円</td><td class="c">平日14:00-19:30</td><td class="c">約2,290万円</td><td class="c"><strong>+774万円</strong>（安定期）</td></tr>
+  </table>
+  <div class="callout c-amber">⚠️ この v1.3 はリトリートα当時の<strong>学童単体</strong>の数字。その後 <strong>v2.0「3層構造」へ再設計</strong>され、定員30名・学童＋神社事業＋個人事業の合算で見る形に進化しています → 上部タブ「📊 経営計画ディスカッション」で最新版を参照。</div>
+</section>
 
+<!-- s2 -->
+<section class="tab grp-share" id="s2">
+  <h2>2. リトリートα以降の19日間（5/16 → 5/30）</h2>
+  <table>
+    <tr><th class="l" style="width:64px;">日付</th><th class="l">出来事</th><th class="l">キーポイント</th></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">5/16</strong></td><td class="l">2次会MTG<br><small>玄氣・昌美・長田さん・島田さん</small></td><td class="l">カフェ運営を「イベント型」に大転換／<strong>収支見直し論点を長田さんが指摘</strong>（理事長・校長・事務局長の人件費、長期休暇収入、送迎バス）</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">5/17</strong></td><td class="l">澤井税理士MTG</td><td class="l"><strong>「株価0」スキーム合意</strong>／法人形態の長期展望</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">5/18</strong></td><td class="l">法人設立学童MTG<br><small>玄氣・昌美</small></td><td class="l">株価0確定／<strong>学童事業から昌美の人件費は出さない</strong>構造／2階に職員室確保／大阪見学6/12調整</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">5/25-28</strong></td><td class="l">OU2前田さん・建築側</td><td class="l">着工金 <strong>5,350万 → 3,000+2,350万 分割案</strong>を社内へ上申（社内決裁6/4予定）</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">5/29</strong></td><td class="l">三菱UFJ上野支店MTG<br><small>中山支店長代理が窓口</small></td><td class="l">引渡し6/11／地鎮祭8/6／<strong>建物用途を最終確定するよう強く要請</strong>／「正しい情報で」を6回以上／喜久雄さん本人の印象良好</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">5/30</strong></td><td class="l">昌美さんMTG<br><small>スターバックスにて</small></td><td class="l"><strong style="color:var(--navy)">★新スキームが浮上</strong>／用途を伏せる戦略から実態開示方針へ転換</td></tr>
+  </table>
+  <div class="callout c-blue"><strong>5/16で長田さんからいただいた指摘は全て今もアクティブ</strong><br>人件費・長期休暇収入・送迎・株主形態・講師ネットワーク — 本日の議論の中核に据えています。</div>
+</section>
+
+<!-- s3 -->
+<section class="tab grp-share" id="s3">
+  <h2>3. 新スキーム（5/30 浮上）<span class="tag t-amber" style="margin-left:8px;">🟡 検討中の案</span></h2>
+  <div class="callout c-amber"><strong>本日の本題</strong>：このスキーム自体を<strong>「進めるかどうか」</strong>を長田さんと一緒に議論したい。藤原さんの事業参画は<strong>未定</strong>。資料共有の許可はいただいており、本MTG参加可否は打診済（出張中のため不参加の可能性あり）。</div>
+  <div class="scheme blue">
+    <div class="t" style="color:var(--navy)">株式会社 里和（satowa）<small>　※名称仮</small></div>
+    <div class="note"><strong>代表（理事長）</strong>：宇田川昌美　/　<strong>事業</strong>：不動産管理＋教育事業＋神社カフェ運営<br><strong>譲渡スキーム</strong>：株価0円・2年後（or前倒し）に 喜久雄 → 昌美 へ譲渡</div>
+  </div>
+  <div class="arrow">↓ <small>大家／テナント関係（※藤原さん新法人案を採る場合）</small></div>
+  <div class="scheme green">
+    <div class="t" style="color:var(--green)">藤原さんの新法人 <small>（國創りメンバー）</small> <span class="tag t-amber">打診中・未確定</span></div>
+    <div class="note"><strong>代表（案）</strong>：藤原宗賢（としかつ）さん ※事業参画は未定　/　<strong>事業</strong>：学童経営<br><strong>校長</strong>：長田さん　|　<strong>事務局等</strong>：玄氣</div>
+  </div>
+  <h3>このスキーム案のポイント</h3>
+  <ul>
+    <li><strong>銀行への用途方針</strong>：伏せる戦略 → <strong>実態開示方針へ転換</strong>（5/29銀行の要請を真正面から受けて）</li>
+    <li>里和（大家）／藤原さん新法人（学童テナント）の構造で、<strong>第三者賃借が実態ベースで成立</strong>する設計</li>
+    <li><strong>資金フロー</strong>：公益財団（クロノス）→ 事業会社 → 不動産管理</li>
+    <li>長田さんに<strong>校長として担っていただくことは確認済</strong>（リトリートα時点）。位置づけは継続</li>
+  </ul>
+  <div class="callout c-green"><strong>長田さんに本日相談したいこと（最重要）</strong><br>① そもそもこの「藤原さん新法人＝学童テナント」案を進めるかどうか。<br>② 進める場合、藤原さんの会社が学童経営主体として入る座組で、<strong>引き続き校長として担っていただける</strong>か。<br>③ 進める場合の株主・出資・契約形態のご希望（共同経営／業務委託／報酬体系のイメージ）。</div>
+</section>
+
+<!-- s4 -->
+<section class="tab grp-share" id="s4">
+  <h2>4. 銀行融資の現状と直近スケジュール</h2>
+  <h3>三菱UFJ上野支店</h3>
+  <p><strong>窓口</strong>：中山 支店長代理　|　<strong>融資部長</strong>：長尾さん　|　<strong>喜久雄さん本人の印象</strong>：良好（しっかり受け答え）</p>
+  <div class="callout c-amber"><strong>銀行が言ったこと（5/29）</strong>：「正しい情報で」「変更時は都度共有」「節税目的のみの融資は不可」「事業性が回ることが前提」</div>
+  <h3>融資返済のタイミング（5/29に判明）</h3>
+  <ul>
+    <li>つなぎ融資 → 引渡し後（6/26）から <strong>利息のみ</strong> 引き落とし開始</li>
+    <li>元金返済は <strong>家賃発生時期に合わせて据え置き可能</strong></li>
+    <li>入居が遅れた場合は手元資金から支払い</li>
+  </ul>
+  <h3>直近スケジュール</h3>
+  <table>
+    <tr><th class="l" style="width:120px;">期日</th><th class="l">内容</th></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">6/2（今夜）</strong></td><td class="l"><strong>長田さんMTG</strong></td></tr>
+    <tr><td class="l">6/4</td><td class="l">OU2社内決裁の結果確認（着工金分割案）</td></tr>
+    <tr><td class="l">6/6</td><td class="l">NSアカデミー第3回／<strong>リトリートα進捗報告会</strong></td></tr>
+    <tr><td class="l">6/上旬</td><td class="l">株式現金化実行（サッポロ・アサヒ・キリン・モルガン）</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">6/8（月）</strong></td><td class="l"><strong>3,000万 振込実行</strong>（振込予約方式）</td></tr>
+    <tr><td class="l">6/10（火）13:00</td><td class="l">LIXIL ショールーム見学（新宿）</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">6/12（金）</strong></td><td class="l"><strong>大阪 なるには學問堂 見学</strong></td></tr>
+    <tr><td class="l">6/中旬</td><td class="l">中山さんへ建物用途の最終回答 ＋ 事業計画書プレゼン</td></tr>
+    <tr><td class="l">6/18（木）14:00</td><td class="l">OU2コーディネーターMTG</td></tr>
+    <tr><td class="l">6月末</td><td class="l">三菱UFJ事前審査の方向性が見える</td></tr>
+    <tr><td class="l"><strong style="color:var(--navy)">8/6</strong></td><td class="l"><strong>地鎮祭 ／ 融資完了前提日</strong></td></tr>
+  </table>
+</section>
+
+<!-- s5 -->
+<section class="tab grp-share" id="s5">
+  <h2>5. 長田さんと本日 擦り合わせたいこと</h2>
+  <div class="card"><strong>① 新スキーム自体を進めるかどうか</strong> <span class="tag t-red">最重要</span><p>「藤原さん新法人＝学童テナント／里和＝大家」というスキーム案を進めるか、率直にディスカッションしたい。<br><small>※藤原さんの事業参画は未定／資料共有許可済／MTG参加可否は打診中（出張中）</small></p></div>
+  <div class="card"><strong>② 進める場合の校長としての位置づけ確認</strong> <span class="tag t-red">最重要</span><p>校長として担っていただくこと自体はリトリートα時点で確認済。ただし<strong>藤原さんの会社が学童経営主体として入る座組になった時に、引き続き校長としてご納得いただけるか</strong>を改めて確認したい。</p></div>
+  <div class="card"><strong>③ 進める場合の株主・出資・契約形態のご希望</strong> <span class="tag t-amber">本日伺いたい</span><p>共同経営／業務委託／報酬体系のイメージ。即決でなくOK、まずは方向性を伺いたい。</p></div>
+  <div class="card"><strong>④ 三力フレームのカリキュラム中軸化</strong> <span class="tag t-green">合意確認</span><p>長田さん由来の三力（学力・才能・人間力）を、カリキュラム設計の中軸に据える方向。</p></div>
+  <h3>⑤ 5/16指摘事項の進化系</h3>
+  <table>
+    <tr><th class="l">長田さん指摘（5/16）</th><th class="l">現状 / 進化系</th></tr>
+    <tr><td class="l">理事長・校長・事務局長の人件費が未計上</td><td class="l"><strong>v2.0で組込済</strong>：理事長＝昌美(学童0)／校長＝長田さん(10万+10%)／事務局＝玄氣(12万+7%)</td></tr>
+    <tr><td class="l">長期休暇収入が未計上</td><td class="l">v2.0で計上（学童PLに長期休み加算）</td></tr>
+    <tr><td class="l">送迎バス運転手の人件費</td><td class="l">v2.0で車両関連(送迎)計上／6/12大阪で「2人1組お迎え」モデル実見予定</td></tr>
+    <tr><td class="l">講師ネットワーク（日本画継承者など）</td><td class="l">未着手、長田さん経由での接続が必要</td></tr>
+    <tr><td class="l">株主・出資・契約形態</td><td class="l"><strong>本日のMTGで議論したい論点</strong>（上記②）</td></tr>
+  </table>
+</section>
+
+<!-- s6 -->
+<section class="tab grp-share" id="s6">
+  <h2>6. 4者戦略会議と、なつ先生コンサル</h2>
+  <h3>4者戦略会議の参加者と議題候補 <span class="tag t-amber">スキーム案を進める場合</span></h3>
+  <div class="callout c-blue"><strong>参加者（案）</strong>：藤原さん<small>（事業参画は未定／打診中）</small> ／ 長田さん（校長） ／ 昌美（理事長） ／ 玄氣（事務局等）</div>
+  <p><strong>議題候補：</strong></p>
+  <ol>
+    <li><strong>スキーム案を進めるかどうかの最終意思決定</strong></li>
+    <li>進める場合の役割分担の確認（里和 と 藤原さん新法人）</li>
+    <li>学童事業の事業計画（v1.3 → v2.0）の更新</li>
+    <li>銀行への用途開示の戦術設計</li>
+    <li>クロノス公益財団との資金フロー設計</li>
+    <li>6/12 大阪学問堂見学の同行・観察ポイント擦り合わせ</li>
+  </ol>
+  <h3>なつ先生（奈都先生）コンサルの位置づけ</h3>
+  <p>4者会議とは<strong>別レイヤー</strong>で、戦略全体への先読み視点を依頼。山田さん経由で打診中。</p>
+  <ul>
+    <li>① 株売却のタイミング（6月上旬で問題ないか）</li>
+    <li>② 法人設立のタイミングと主体（里和単体 vs 学童は別法人）</li>
+    <li>③ tugai 支払い開始時期の最適化（7月中旬〜末ライン維持）</li>
+  </ul>
+  <h3>本日の進め方</h3>
+  <div class="callout c-green">1. リトリートα以降の流れの共有（タブ1〜2）<br>2. <strong>新スキームの構造と「校長＝長田さん」前提の確認</strong>（タブ3・5）<br>3. <strong>経営計画v2.0と黒字化3パターンの討議</strong>（上部「📊 経営計画」グループ）<br>4. 4者会議の議題と日程感の擦り合わせ（タブ6）</div>
+</section>
+
+<!-- s7 -->
+<section class="tab grp-share" id="s7">
+  <h2>7. 6/6 リトリートα進捗報告会に向けて</h2>
+  <h3>haruさんからの要項（5/31発信）</h3>
+  <div class="callout c-amber"><strong>日時</strong>：6/6（金）12:00　|　<strong>場所</strong>：TIME SHARING 竹橋 廣瀬第2ビル B1F<br><strong>形式</strong>：一事業5分ずつ、各事業の代表者が発表（欠席時は出席者が代理）<br><strong>事前共有要請</strong>：⚠️ 各事業について<strong>発表者は誰か／事業メンバーは誰か</strong>を事前にグループへ</div>
+  <h3>haruさんから「話してほしいこと」4点</h3>
+  <table>
+    <tr><th style="width:40px;">#</th><th class="l">項目</th><th style="width:90px;">強調</th></tr>
+    <tr><td class="c">①</td><td class="l"><strong>進捗報告</strong> — リトリートαから、その後どう動いたか</td><td></td></tr>
+    <tr><td class="c">②</td><td class="l"><strong>行き詰まっていること</strong> — 正直に。隠さなくていい</td><td><span class="tag t-red">haru強調</span></td></tr>
+    <tr><td class="c">③</td><td class="l"><strong>今後の事業計画</strong> — これからどこへ向かうか</td><td></td></tr>
+    <tr><td class="c">④</td><td class="l"><strong>10/18 東大・安田講堂「One World」の活用法</strong></td><td><span class="tag t-red">haru強調</span></td></tr>
+  </table>
+  <div class="callout c-green"><strong>haruメッセージの核</strong>：「行き詰まりを正直に出した時こそ、『それ、私が力になれる』という仲間が現れます。この場は報告会であると同時に<strong>ビジネスマッチングの場</strong>です」「<strong>公益財団 × 事業展開の二軸の循環</strong>」「貢献することと自分が伸びることは矛盾しません」</div>
+  <h3>本MTG最後に決めたいこと</h3>
+  <table>
+    <tr><th style="width:40px;">#</th><th class="l">決定事項</th><th class="l">選択肢／問い</th></tr>
+    <tr><td class="c">A</td><td class="l"><strong>発表者</strong></td><td class="l">玄氣／昌美／長田さん／3者で分担？ <span class="tag t-red">事前共有必須</span></td></tr>
+    <tr><td class="c">B</td><td class="l"><strong>事業メンバー記載</strong></td><td class="l">玄氣・昌美・長田さん・藤原さん／藤原さん含めるなら事前同意必要？ <span class="tag t-red">事前共有必須</span></td></tr>
+    <tr><td class="c">C</td><td class="l"><strong>事業の呼称</strong></td><td class="l">「昌美御殿／SATOWAプロジェクト」「リトリートα／学童」？</td></tr>
+    <tr><td class="c">D</td><td class="l"><strong>5分プレゼンの構成</strong></td><td class="l">haruの4トピック準拠（①30秒/②90秒/③60秒/④90秒/余30秒）でよいか</td></tr>
+    <tr><td class="c">E</td><td class="l"><strong>「10/18でこうなれたら最高」</strong></td><td class="l">準備項目として要請されている1行宣言を決める</td></tr>
+    <tr><td class="c">F</td><td class="l"><strong>叩き台の担当・期日</strong></td><td class="l">玄氣がスライド叩き台を作る？ 6/4〜6/5で共有OKか</td></tr>
+  </table>
+  <div class="callout c-red"><strong>②「行き詰まり」をどう出すか（経営計画と直結）</strong>：「<strong>学童だけでは利益が見えない</strong>」をどう正直に出すか。出すなら「だからこそ②③で支える3層設計にした」までセットで語る → 上部「📊 経営計画」グループ参照。</div>
+</section>
+
+<!-- ====================== KEIEI GROUP ====================== -->
+
+<!-- t1 -->
+<section class="tab grp-keiei" id="t1">
+  <h2>経営計画 — エグゼクティブ・サマリー</h2>
+  <div class="lead"><strong>結論</strong>：事業計画は v1.3（学童単体）から <strong>v2.0「3層構造」</strong>へ進化。<strong>学童“単体”では2年間赤字で、5年累計もマイナス</strong>。黒字を生むのは <strong>②法人その他（賃貸＋神社事業）</strong>で、さらに <strong>③個人事業</strong>が上に乗る。今夜の核心は<strong>「どのパターンで黒字を成立させるか」と「銀行・6/6にどう正直に見せるか」</strong>。</div>
+  <h3>3層構造</h3>
+  <div class="grid3">
+    <div class="card"><span class="tag t-blue">①</span><strong>学童グループ</strong><p class="note">学童＋1階イベント＋乳幼児サブスク。SATOWA法人。定員30名</p></div>
+    <div class="card"><span class="tag t-green">②</span><strong>法人その他</strong><p class="note">賃貸4戸＋神社事業＋物販。SATOWA法人</p></div>
+    <div class="card"><span class="tag t-amber">③</span><strong>個人事業</strong><p class="note">ディマティーニ・UE・コーチング等。昌美 個人事業（法人と別）</p></div>
+  </div>
   <h3>年間営業利益（万円）— v2.0 標準シナリオ</h3>
   <table>
     <tr><th class="l">区分</th><th>1年目</th><th>2年目</th><th>3年目</th><th>4年目〜</th><th>5年累計</th></tr>
     <tr><td class="l">① 学童グループ</td><td class="neg">▲1,658</td><td class="neg">▲492</td><td class="pos">+323</td><td class="pos">+640</td><td class="neg">▲547</td></tr>
     <tr><td class="l">② 法人その他</td><td class="pos">+260</td><td class="pos">+635</td><td class="pos">+793</td><td class="pos">+876</td><td class="pos">+3,440</td></tr>
-    <tr><td class="l">③ クォンタム個人</td><td class="neg">▲79</td><td class="pos">+171</td><td class="pos">+433</td><td class="pos">+632</td><td class="pos">+1,790</td></tr>
+    <tr><td class="l">③ 個人事業</td><td class="neg">▲79</td><td class="pos">+171</td><td class="pos">+433</td><td class="pos">+632</td><td class="pos">+1,790</td></tr>
     <tr class="tot"><td class="l">■ SATOWA法人（①＋②）</td><td class="neg">▲1,398</td><td class="pos">+143</td><td class="pos">+1,116</td><td class="pos">+1,516</td><td class="pos">+2,893</td></tr>
-    <tr><td class="l">（参考）3層合計（①＋②＋③）</td><td class="neg">▲1,477</td><td class="pos">+314</td><td class="pos">+1,550</td><td class="pos">+2,148</td><td class="pos">+4,683</td></tr>
+    <tr><td class="l">（参考）3層合計</td><td class="neg">▲1,477</td><td class="pos">+314</td><td class="pos">+1,550</td><td class="pos">+2,148</td><td class="pos">+4,683</td></tr>
   </table>
-  <p class="note">※法人税考慮前の営業利益。2年目以降は継続補助金100万/年を営業外で別途加算可。初期投資 2,529万／一括補助金 400万／実質自己負担 2,129万。</p>
-
+  <p class="note">※法人税考慮前。2年目以降は継続補助金100万/年を別途加算可。初期投資2,529万／一括補助金400万／実質自己負担2,129万。</p>
   <div class="grid3">
-    <div class="kpi"><div class="v neg">▲547万</div><div class="k">学童単体 5年累計<br>（ここが弱点）</div></div>
-    <div class="kpi"><div class="v pos">+2,893万</div><div class="k">SATOWA法人 5年累計<br>（②が学童を支える）</div></div>
-    <div class="kpi"><div class="v">2年目</div><div class="k">SATOWA法人<br>黒字化タイミング</div></div>
+    <div class="kpi"><div class="v neg">▲547万</div><div class="k">学童単体 5年累計（弱点）</div></div>
+    <div class="kpi"><div class="v pos">+2,893万</div><div class="k">SATOWA法人 5年累計</div></div>
+    <div class="kpi"><div class="v">2年目</div><div class="k">SATOWA法人 黒字化</div></div>
   </div>
-
-  <h3>3つの黒字化パターン（このあと各タブで詳細）</h3>
+  <h3>3つの黒字化パターン</h3>
   <table>
     <tr><th class="l">パターン</th><th class="l">何で黒字にするか</th><th class="l">成立性</th><th class="l">銀行から見ると</th></tr>
-    <tr><td class="l"><span class="tag t-blue">A</span>学童だけ</td><td class="l">学童事業“単体”で黒字化</td><td class="l">成熟期は黒字(+640万)だが立上2年の赤字を回収する設計が必要</td><td class="l">未開業＝0→1。最もシビア</td></tr>
-    <tr><td class="l"><span class="tag t-green">B</span>学童＋神社カフェ</td><td class="l">SATOWA法人として②と合算</td><td class="l">2年目黒字化・5年+2,893万。現実的な基準ケース</td><td class="l">賃貸は堅いが神社事業は未実績</td></tr>
-    <tr><td class="l"><span class="tag t-amber">C</span>全体ポートフォリオ</td><td class="l">＋UE・ディマティーニ・ルーシー等</td><td class="l">3層合計5年+4,683万。上振れ大だが昌美個人依存</td><td class="l">個人事業＝法人与信に直結しない</td></tr>
+    <tr><td class="l"><span class="tag t-blue">A</span>学童だけ</td><td class="l">学童事業“単体”で黒字化</td><td class="l">成熟期は黒字(+640万)だが立上2年の赤字回収が要</td><td class="l">未開業＝0→1。最もシビア</td></tr>
+    <tr><td class="l"><span class="tag t-green">B</span>学童＋神社カフェ</td><td class="l">SATOWA法人として②と合算</td><td class="l">2年目黒字化・5年+2,893万。現実的な基準</td><td class="l">賃貸は堅いが神社事業は未実績</td></tr>
+    <tr><td class="l"><span class="tag t-amber">C</span>全体</td><td class="l">＋個人事業（UE・ディマ等）</td><td class="l">3層合計5年+4,683万。上振れ大だが個人依存</td><td class="l">個人事業＝法人与信に不算入</td></tr>
   </table>
-
-  <div class="callout c-red">
-    <strong>今夜の最大論点（6/6「正直視野」とも直結）</strong>：
-    「<strong>学童だけでは利益が見えない</strong>」という事実を、行き詰まりとして正直に開示するか。
-    そして 0→1の事業群（神社・UE・ディマティーニ・ルーシー）を、銀行に「返済前提」として見せるのか「アップサイド」として切り分けるのか。
-  </div>
+  <div class="callout c-red"><strong>今夜の最大論点（6/6「正直視野」とも直結）</strong>：「<strong>学童だけでは利益が見えない</strong>」を行き詰まりとして正直に開示するか。0→1事業群を銀行に「返済前提」で見せるのか「アップサイド」として切り分けるのか。</div>
 </section>
 
-<!-- ============ TAB 2 v2.0詳細 ============ -->
-<section class="tab" id="t2">
+<!-- t2 -->
+<section class="tab grp-keiei" id="t2">
   <h2>事業計画 v2.0 詳細（端折らない版）</h2>
-  <p class="note">正本シート：3層統合 / ①学童PL / ②法人その他PL / ③クォンタムPL。以下は各層のP&Lを原データのまま展開。単位＝万円（原本は千円）。</p>
-
+  <p class="note">正本シート：3層統合 / ①学童PL / ②法人その他PL / ③個人事業PL。単位＝万円（原本は千円）。</p>
   <h3>① 学童グループ P&L（4年目以降・満員想定）</h3>
   <div class="grid2">
-    <div class="card">
-      <h4>売上の内訳（4年目）</h4>
+    <div class="card"><h4>売上の内訳（4年目）</h4>
       <table>
         <tr><th class="l">項目</th><th>万円/年</th></tr>
-        <tr><td class="l">学童 月会費</td><td>2,822</td></tr>
-        <tr><td class="l">長期休み加算</td><td>53</td></tr>
-        <tr><td class="l">オプション・WS</td><td>464</td></tr>
-        <tr><td class="l">入会金</td><td>20</td></tr>
-        <tr><td class="l">1階イベント</td><td>446</td></tr>
-        <tr><td class="l">乳幼児サブスク</td><td>458</td></tr>
+        <tr><td class="l">学童 月会費</td><td>2,822</td></tr><tr><td class="l">長期休み加算</td><td>53</td></tr>
+        <tr><td class="l">オプション・WS</td><td>464</td></tr><tr><td class="l">入会金</td><td>20</td></tr>
+        <tr><td class="l">1階イベント</td><td>446</td></tr><tr><td class="l">乳幼児サブスク</td><td>458</td></tr>
         <tr class="tot"><td class="l">売上 合計</td><td>4,263</td></tr>
-      </table>
-    </div>
-    <div class="card">
-      <h4>コストの内訳（4年目）</h4>
+      </table></div>
+    <div class="card"><h4>コストの内訳（4年目）</h4>
       <table>
         <tr><th class="l">項目</th><th>万円/年</th></tr>
-        <tr><td class="l">現場スタッフ給与</td><td>1,440</td></tr>
-        <tr><td class="l">社会保険(15%)</td><td>216</td></tr>
-        <tr><td class="l">経営陣 固定給</td><td>264</td></tr>
-        <tr><td class="l">経営陣 成功報酬</td><td>76</td></tr>
-        <tr><td class="l">外部講師費</td><td>432</td></tr>
-        <tr><td class="l">イベント関連費</td><td>221</td></tr>
-        <tr><td class="l">乳幼児スペース運営</td><td>54</td></tr>
-        <tr><td class="l">賃料(地下12万)</td><td>144</td></tr>
-        <tr><td class="l">車両(送迎)</td><td>104</td></tr>
-        <tr><td class="l">ICT・AI</td><td>260</td></tr>
-        <tr><td class="l">食材・消耗品</td><td>232</td></tr>
-        <tr><td class="l">保険・賠償</td><td>18</td></tr>
-        <tr><td class="l">広告・運営</td><td>90</td></tr>
-        <tr><td class="l">光熱・通信</td><td>71</td></tr>
+        <tr><td class="l">現場スタッフ給与</td><td>1,440</td></tr><tr><td class="l">社会保険(15%)</td><td>216</td></tr>
+        <tr><td class="l">経営陣 固定給</td><td>264</td></tr><tr><td class="l">経営陣 成功報酬</td><td>76</td></tr>
+        <tr><td class="l">外部講師費</td><td>432</td></tr><tr><td class="l">イベント関連費</td><td>221</td></tr>
+        <tr><td class="l">乳幼児スペース運営</td><td>54</td></tr><tr><td class="l">賃料(地下12万)</td><td>144</td></tr>
+        <tr><td class="l">車両(送迎)</td><td>104</td></tr><tr><td class="l">ICT・AI</td><td>260</td></tr>
+        <tr><td class="l">食材・消耗品</td><td>232</td></tr><tr><td class="l">保険・賠償</td><td>18</td></tr>
+        <tr><td class="l">広告・運営</td><td>90</td></tr><tr><td class="l">光熱・通信</td><td>71</td></tr>
         <tr class="tot"><td class="l">コスト 合計</td><td>3,623</td></tr>
-      </table>
-    </div>
+      </table></div>
   </div>
-  <div class="callout c-blue">
-    学童グループ 4年目：売上 <strong>4,263万</strong> − コスト <strong>3,623万</strong> ＝ <strong class="pos">営業利益 +640万（利益率15%）</strong>。
-    成熟期は黒字。問題は <strong>立上2年（1年目▲1,658万・2年目▲492万）</strong> の深いJカーブで、5年累計は <strong class="neg">▲547万</strong>。
-  </div>
-  <div class="card">
-    <h4>経営陣報酬の設計（v2.0で組込済）</h4>
+  <div class="callout c-blue">学童グループ 4年目：売上<strong>4,263万</strong>−コスト<strong>3,623万</strong>＝<strong class="pos">営業利益+640万（利益率15%）</strong>。成熟期は黒字。問題は<strong>立上2年（▲1,658万・▲492万）</strong>の深いJカーブで、5年累計は<strong class="neg">▲547万</strong>。</div>
+  <div class="card"><h4>経営陣報酬の設計（v2.0で組込済）</h4>
     <table>
       <tr><th class="l">役職</th><th class="l">担当</th><th>固定給/月</th><th class="l">変動</th></tr>
-      <tr><td class="l">理事長</td><td class="l">昌美さん</td><td>0円</td><td class="l">学童からは0／クォンタム(③)で稼ぐ設計</td></tr>
+      <tr><td class="l">理事長</td><td class="l">昌美さん</td><td>0円</td><td class="l">学童からは0／個人事業(③)で稼ぐ設計</td></tr>
       <tr><td class="l">校長</td><td class="l">長田さん</td><td>10万円</td><td class="l">＋イベント売上の10%（WS統括）</td></tr>
       <tr><td class="l">事務局長</td><td class="l">玄氣</td><td>12万円</td><td class="l">＋イベント売上の7%</td></tr>
-    </table>
-  </div>
-
+    </table></div>
   <h3>② 法人その他 P&L（賃貸＋神社事業＋物販）</h3>
   <table>
     <tr><th class="l">区分</th><th>1年目</th><th>2年目</th><th>3年目</th><th>4年目〜</th><th class="l">備考</th></tr>
-    <tr><td class="l">賃貸 売上（4戸）</td><td>192</td><td>444</td><td>480</td><td>504</td><td class="l">302=12万/301・202・201=10万</td></tr>
+    <tr><td class="l">賃貸 売上（4戸）</td><td>192</td><td>444</td><td>480</td><td>504</td><td class="l">302=12万/他10万</td></tr>
     <tr><td class="l">神社事業 売上</td><td>150</td><td>330</td><td>510</td><td>600</td><td class="l">お守り/おみくじAI/お石/滝行/大和風水</td></tr>
     <tr><td class="l">物販 売上</td><td>36</td><td>72</td><td>108</td><td>120</td><td class="l">教材・グッズ</td></tr>
-    <tr class="tot"><td class="l">② 売上 合計</td><td>378</td><td>846</td><td>1,098</td><td>1,224</td><td class="l"></td></tr>
-    <tr><td class="l">② 営業利益</td><td class="pos">+260</td><td class="pos">+635</td><td class="pos">+793</td><td class="pos">+876</td><td class="l">賃貸+468/神社+360/物販+48</td></tr>
+    <tr class="tot"><td class="l">② 営業利益</td><td class="pos">+260</td><td class="pos">+635</td><td class="pos">+793</td><td class="pos">+876</td><td class="l">賃貸+468/神社+360/物販+48</td></tr>
   </table>
-  <p class="note">神社事業コスト＝売上の40%、物販コスト＝仕入60%。賃貸管理コスト 年36万。「神社カフェ」は神社事業群に内包（カフェ営業は今後の追加設計が必要）。</p>
-
-  <h3>③ クォンタム個人 P&L（昌美 個人事業）</h3>
+  <p class="note">神社事業コスト＝売上40%、物販＝仕入60%、賃貸管理 年36万。「神社カフェ」は神社事業群に内包（カフェ業態は今後PL設計が必要）。</p>
+  <h3>③ 個人事業 P&L（昌美 個人事業）</h3>
   <table>
-    <tr><th class="l">プログラム</th><th>月額(満員)</th><th>4年目 万円/年</th><th class="l">備考</th></tr>
-    <tr><td class="l">ディマティーニ 単発</td><td>13.2万</td><td>158</td><td class="l">2h 4.4万×3件</td></tr>
-    <tr><td class="l">ディマティーニ 継続</td><td>16.7万</td><td>200</td><td class="l">半年100万・月1名</td></tr>
-    <tr><td class="l">バリューファクター診断・WS</td><td>12万</td><td>144</td><td class="l">3万×4件</td></tr>
-    <tr><td class="l">親向けライフコーチング</td><td>8万</td><td>96</td><td class="l">2万×4件</td></tr>
-    <tr><td class="l">AI教育コンサル</td><td>4万</td><td>48</td><td class="l">2万×2件</td></tr>
-    <tr><td class="l">発達相談・専門家</td><td>4万</td><td>48</td><td class="l">2万×2件</td></tr>
-    <tr><td class="l">UE（アルティメット・エナジェティクス）</td><td>10万</td><td>120</td><td class="l">v1.6新規・今後設計</td></tr>
-    <tr><td class="l">講演・著作・コンテンツ</td><td>5万</td><td>60</td><td class="l">スポット</td></tr>
-    <tr class="tot"><td class="l">③ 売上 合計</td><td></td><td>875</td><td class="l">コスト242 → 営業利益+632</td></tr>
+    <tr><th class="l">プログラム</th><th>4年目 万円/年</th><th class="l">備考</th></tr>
+    <tr><td class="l">ディマティーニ 単発</td><td>158</td><td class="l">2h 4.4万×3件</td></tr>
+    <tr><td class="l">ディマティーニ 継続</td><td>200</td><td class="l">半年100万・月1名</td></tr>
+    <tr><td class="l">バリューファクター診断・WS</td><td>144</td><td class="l">3万×4件</td></tr>
+    <tr><td class="l">親向けライフコーチング</td><td>96</td><td class="l">2万×4件</td></tr>
+    <tr><td class="l">AI教育コンサル／発達相談</td><td>96</td><td class="l">各2万×2件</td></tr>
+    <tr><td class="l">UE（アルティメット・エナジェティクス）</td><td>120</td><td class="l">新規・今後設計</td></tr>
+    <tr><td class="l">講演・著作・コンテンツ</td><td>60</td><td class="l">スポット</td></tr>
+    <tr class="tot"><td class="l">③ 売上合計</td><td>875</td><td class="l">コスト242 → 営業利益+632</td></tr>
   </table>
-  <p class="note">③コストの主要項：法人への支払（場所代・集客マージン）年180万＝売上の約20%。これがSATOWA法人(②側)への内部収入になる設計だが、現状②売上には未計上（内部取引の未確定論点）。</p>
-
+  <p class="note">③コスト主要項：法人への支払（場所代・集客マージン）年180万＝売上の約20%。これが②側への内部収入になる設計（現状②売上に未計上＝内部取引の未確定論点）。</p>
   <h3>未確定の内部取引（6論点）</h3>
   <ol>
     <li>父 → 法人 マスターリース賃料（建設費1.54〜1.62億の利回り想定／市場家賃比較）</li>
-    <li>クォンタム個人 → 法人 への支払率（売上の何%か）</li>
+    <li>個人事業 → 法人 への支払率（売上の何%か）</li>
     <li>神社事業の収益が「法人」か「神社本体」か（按分／業務委託）</li>
     <li>UEの事業立上時期と単価設計</li>
     <li>父の借入1〜1.6億の返済原資（賃料収入のみで成立するか）</li>
@@ -249,61 +380,41 @@ footer{max-width:920px; margin:0 auto; padding:18px; color:var(--grey); font-siz
   </ol>
 </section>
 
-<!-- ============ TAB A 学童だけ ============ -->
-<section class="tab" id="t3">
+<!-- t3 -->
+<section class="tab grp-keiei" id="t3">
   <h2><span class="tag t-blue">パターンA</span>学童だけで黒字化する手段</h2>
-  <div class="lead">
-    現状、学童グループは<strong>成熟期(4年目)は+640万の黒字</strong>だが、<strong>立上2年で約▲2,150万の累積赤字</strong>を出し、5年累計は▲547万。
-    「学童単体で黒字」を成立させるには、<strong>①Jカーブを浅く・短くする ②成熟期の利益率を厚くする</strong> の2方向しかない。
-  </div>
-
+  <div class="lead">学童グループは<strong>成熟期(4年目)は+640万の黒字</strong>だが、<strong>立上2年で約▲2,150万の累積赤字</strong>を出し5年累計▲547万。「学童単体で黒字」には<strong>①Jカーブを浅く・短く ②成熟期の利益率を厚く</strong>の2方向しかない。</div>
   <h3>なぜ学童単体は早期赤字なのか</h3>
-  <div class="callout c-amber">
-    コストの大半（現場給与1,440万・社保216万・外部講師432万・ICT260万等）が<strong>開業初年度から満額</strong>で立つのに対し、
-    売上は稼働率ランプ（1年目60%＝在籍18名）で立ち上がるため。<strong>固定費先行・収入後追い</strong>の典型構造。
-  </div>
-
+  <div class="callout c-amber">コストの大半（現場給与1,440万・社保216万・外部講師432万・ICT260万等）が<strong>開業初年度から満額</strong>で立つのに対し、売上は稼働率ランプ（1年目60%＝在籍18名）で立ち上がる。<strong>固定費先行・収入後追い</strong>の典型構造。</div>
   <h3>黒字化を早める5つの変更ポイント（レバー）</h3>
   <table>
-    <tr><th class="l">#</th><th class="l">変更ポイント</th><th class="l">効果の方向</th><th class="l">リスク／論点</th></tr>
-    <tr><td>1</td><td class="l"><strong>稼働ランプ短縮</strong>（1年目60%→80%）<br>体験会・先行予約・きょうだい割で前倒し</td><td class="l">売上 +6〜7百万/年<br>＝赤字を半減</td><td class="l">月7〜10万のプレミアム価格で初年度80%は強気</td></tr>
-    <tr><td>2</td><td class="l"><strong>経営陣報酬を黒字化まで据置</strong><br>（理事長0は既定／校長・事務局も立上期は最小）</td><td class="l">1〜2年目 ▲250〜340万/年 圧縮</td><td class="l">長田さん・玄氣の生活費をどこで賄うか</td></tr>
-    <tr><td>3</td><td class="l"><strong>現場スタッフを稼働連動で段階採用</strong><br>（常勤2＋パート、在籍数で増員）</td><td class="l">1年目 ▲300〜400万 圧縮</td><td class="l">少人数質保証(1:9)との両立</td></tr>
-    <tr><td>4</td><td class="l"><strong>固定費の変動費化</strong><br>ICT(リース)・送迎(外注)・講師(歩合)</td><td class="l">損益分岐を下げる</td><td class="l">単価上昇分の転嫁が必要</td></tr>
-    <tr><td>5</td><td class="l"><strong>単価/プレミアム比率UP</strong><br>AI特別講座・季節リトリートで10万帯を厚く</td><td class="l">加重平均単価UP=利益率改善</td><td class="l">提供価値の実装が前提</td></tr>
+    <tr><th>#</th><th class="l">変更ポイント</th><th class="l">効果の方向</th><th class="l">リスク／論点</th></tr>
+    <tr><td class="c">1</td><td class="l"><strong>稼働ランプ短縮</strong>（60%→80%）体験会・先行予約・きょうだい割</td><td class="l">売上+6〜7百万/年＝赤字半減</td><td class="l">プレミアム価格で初年度80%は強気</td></tr>
+    <tr><td class="c">2</td><td class="l"><strong>経営陣報酬を黒字化まで据置</strong></td><td class="l">1〜2年目▲250〜340万/年圧縮</td><td class="l">長田さん・玄氣の生活費をどこで賄うか</td></tr>
+    <tr><td class="c">3</td><td class="l"><strong>現場スタッフを稼働連動で段階採用</strong></td><td class="l">1年目▲300〜400万圧縮</td><td class="l">少人数質保証(1:9)との両立</td></tr>
+    <tr><td class="c">4</td><td class="l"><strong>固定費の変動費化</strong>（ICTリース・送迎外注・講師歩合）</td><td class="l">損益分岐を下げる</td><td class="l">単価転嫁が必要</td></tr>
+    <tr><td class="c">5</td><td class="l"><strong>単価/プレミアム比率UP</strong></td><td class="l">利益率改善</td><td class="l">提供価値の実装が前提</td></tr>
   </table>
-
   <h3>シミュレーション：学童単体「早期黒字化」たたき台</h3>
   <table>
     <tr><th class="l">学童グループ 営業利益</th><th>1年目</th><th>2年目</th><th>3年目</th><th>4年目〜</th><th>5年累計</th></tr>
     <tr><td class="l">現状 v2.0（標準）</td><td class="neg">▲1,658</td><td class="neg">▲492</td><td class="pos">+323</td><td class="pos">+640</td><td class="neg">▲547</td></tr>
     <tr><td class="l">レバー1〜3適用（試算）</td><td class="neg">▲348</td><td class="pos">+58</td><td class="pos">+373</td><td class="pos">+640</td><td class="pos">+1,363</td></tr>
   </table>
-  <p class="note">※たたき台の概算。ランプ80%＋経営陣据置＋スタッフ段階採用を仮置きした場合。これでも<strong>1年目は赤字が残る</strong>＝学童は本質的に「立上資金を要する事業」。</p>
-
-  <div class="callout c-blue">
-    <strong>プロの見立て</strong>：学童“単体黒字化”は<strong>不可能ではないが、初年度赤字（数百万〜1千万）の運転資金確保が大前提</strong>。
-    補助金（クロノス）＋自己資金でこのJカーブを埋められるかが成否を分ける。
-    そして<strong>学童の真価は「単体の利益」より「①集客エンジン②ブランド③不動産価値の最大化」</strong>にある——だからこそパターンB/Cの土台になる。
-  </div>
+  <p class="note">※たたき台の概算。ランプ80%＋経営陣据置＋スタッフ段階採用を仮置き。これでも<strong>1年目は赤字が残る</strong>＝学童は本質的に「立上資金を要する事業」。</p>
+  <div class="callout c-blue"><strong>プロの見立て</strong>：学童“単体黒字化”は<strong>不可能ではないが、初年度赤字の運転資金確保が大前提</strong>。補助金＋自己資金でJカーブを埋められるかが成否。そして<strong>学童の真価は「単体の利益」より「集客エンジン・ブランド・不動産価値の最大化」</strong>＝B/Cの土台になる。</div>
 </section>
 
-<!-- ============ TAB B 学童+神社 ============ -->
-<section class="tab" id="t4">
+<!-- t4 -->
+<section class="tab grp-keiei" id="t4">
   <h2><span class="tag t-green">パターンB</span>学童＋神社カフェ＝SATOWA法人で黒字化</h2>
-  <div class="lead">
-    v2.0の<strong>基準ケース</strong>。学童(①)の赤字を、<strong>賃貸＋神社事業(②)</strong>の黒字が吸収し、
-    <strong>SATOWA法人として2年目に黒字化、5年累計+2,893万</strong>。法人経営としては最も現実的な絵。
-  </div>
-
-  <h3>合算ロジック</h3>
+  <div class="lead">v2.0の<strong>基準ケース</strong>。学童(①)の赤字を、賃貸＋神社事業(②)の黒字が吸収し、<strong>SATOWA法人として2年目に黒字化、5年累計+2,893万</strong>。法人経営として最も現実的。</div>
   <div class="grid2">
     <div class="flowbox">① 学童グループ<br><span class="neg">5年累計 ▲547万</span></div>
     <div class="flowbox" style="background:#EFF6EF;border-color:#4A7C4A;">② 法人その他（賃貸＋神社＋物販）<br><span class="pos">5年累計 +3,440万</span></div>
   </div>
   <div class="arrow">＝</div>
-  <div class="flowbox" style="background:#EAF1F9;">■ SATOWA法人（①＋②）　<span class="pos">5年累計 +2,893万</span></div>
-
+  <div class="flowbox">■ SATOWA法人（①＋②）　<span class="pos">5年累計 +2,893万</span></div>
   <h3>シナリオ感度（②の売上を 保守×0.7／標準×1.0／強気×1.3）</h3>
   <table>
     <tr><th class="l">4年目以降 営業利益</th><th>保守 ×0.7</th><th>標準 ×1.0</th><th>強気 ×1.3</th></tr>
@@ -311,166 +422,122 @@ footer{max-width:920px; margin:0 auto; padding:18px; color:var(--grey); font-siz
     <tr><td class="l">② 法人その他</td><td>+602</td><td>+876</td><td>+1,150</td></tr>
     <tr class="tot"><td class="l">■ SATOWA法人（①＋②）</td><td class="pos">+1,242</td><td class="pos">+1,516</td><td class="pos">+1,790</td></tr>
   </table>
-  <div class="callout c-green">
-    <strong>強み</strong>：<strong>保守シナリオ（②が想定の7割）でも4年目+1,242万の黒字</strong>。賃貸という「物理的に堅い収入」が下支えするため、法人全体は底堅い。
-  </div>
-  <div class="callout c-amber">
-    <strong>弱み・論点</strong>：
+  <div class="callout c-green"><strong>強み</strong>：<strong>保守シナリオ（②が想定の7割）でも4年目+1,242万の黒字</strong>。賃貸という「物理的に堅い収入」が下支えし、法人全体は底堅い。</div>
+  <div class="callout c-amber"><strong>弱み・論点</strong>：
     <ul style="margin:6px 0;">
-      <li>②の利益の柱＝<strong>神社事業（お守り/おみくじAI/お石/滝行/大和風水）は売上が仮置き</strong>で実績ゼロ。</li>
-      <li><strong>神社本体との収益按分が未確定</strong>（論点#3）。「これは学童の計画か、神社の収益事業か」が曖昧になりがち。</li>
+      <li>②の利益の柱＝<strong>神社事業は売上が仮置き</strong>で実績ゼロ。</li>
+      <li><strong>神社本体との収益按分が未確定</strong>（論点#3）。「学童の計画か、神社の収益事業か」が曖昧になりがち。</li>
       <li>「神社カフェ」は現v2.0に独立ラインがない＝<strong>カフェ業態は別途PL設計が必要</strong>（原価・回転率・席数）。</li>
-    </ul>
-  </div>
-  <h4>このパターンを強くするには</h4>
-  <ul>
-    <li>神社事業を「学童の体験カリキュラム」と統合し、<strong>1つの集客動線</strong>にする（お守りづくり＝WS＝物販＝送客）。</li>
-    <li>神社本体との按分を<strong>業務委託契約として明文化</strong>（銀行説明のため）。</li>
-    <li>賃貸4戸の<strong>賃料の確度</strong>（誰にいつ貸すか）を固める＝最も銀行が評価する部分。</li>
-  </ul>
+    </ul></div>
 </section>
 
-<!-- ============ TAB C 全体 ============ -->
-<section class="tab" id="t5">
-  <h2><span class="tag t-amber">パターンC</span>全体ポートフォリオで黒字化（UE・ディマティーニ・ルーシー）</h2>
-  <div class="lead">
-    SATOWA法人(①＋②)に、<strong>③クォンタム（昌美個人事業）</strong>を重ねる絵。
-    ディマティーニ・メソッド、バリューファクター、<strong>UE</strong>、<strong>ルーシー連携（デトックス香り蒸し）</strong>等のバックエンドで、
-    3層合計 <strong>5年累計+4,683万</strong>。上振れは最も大きい。
-  </div>
-
+<!-- t5 -->
+<section class="tab grp-keiei" id="t5">
+  <h2><span class="tag t-amber">パターンC</span>全体ポートフォリオで黒字化（個人事業を含む）</h2>
+  <div class="lead">SATOWA法人(①＋②)に、<strong>③個人事業（昌美）</strong>を重ねる絵。ディマティーニ・メソッド、バリューファクター、<strong>UE</strong>、さらに<strong>外部ウェルネス連携</strong>等のバックエンドで、3層合計<strong>5年累計+4,683万</strong>。上振れは最も大きい。</div>
   <h3>3層合計（年間営業利益・万円）</h3>
   <table>
     <tr><th class="l">区分</th><th>1年目</th><th>2年目</th><th>3年目</th><th>4年目〜</th><th>5年累計</th></tr>
     <tr><td class="l">■ SATOWA法人（①＋②）</td><td class="neg">▲1,398</td><td class="pos">+143</td><td class="pos">+1,116</td><td class="pos">+1,516</td><td class="pos">+2,893</td></tr>
-    <tr><td class="l">③ クォンタム個人</td><td class="neg">▲79</td><td class="pos">+171</td><td class="pos">+433</td><td class="pos">+632</td><td class="pos">+1,790</td></tr>
+    <tr><td class="l">③ 個人事業</td><td class="neg">▲79</td><td class="pos">+171</td><td class="pos">+433</td><td class="pos">+632</td><td class="pos">+1,790</td></tr>
     <tr class="tot"><td class="l">3層合計</td><td class="neg">▲1,477</td><td class="pos">+314</td><td class="pos">+1,550</td><td class="pos">+2,148</td><td class="pos">+4,683</td></tr>
   </table>
-
   <h3>③に乗せる事業ライン（実績ゼロの0→1群）</h3>
   <div class="grid3">
-    <div class="card"><strong>ディマティーニ・メソッド</strong><p class="note">単発4.4万×3 + 継続(半年100万)。昌美の認定スキル前提。4年目想定 約358万/年</p></div>
-    <div class="card"><strong>UE（アルティメット・エナジェティクス）</strong><p class="note">セッション・WS。v1.6新規・今後設計。4年目想定 約120万/年</p></div>
-    <div class="card"><strong>ルーシー連携：デトックス香り蒸し</strong><span class="tag t-amber" style="margin-top:6px;">Excel未計上の新規追加候補</span><p class="note">ルーシーさん（農園オイル・香り蒸し・100社運営）との連携。神社・カフェ空間と親和。物販＋施術＋送客のアップサイド</p></div>
+    <div class="card"><strong>ディマティーニ・メソッド</strong><p class="note">単発4.4万×3＋継続(半年100万)。昌美の認定スキル前提。4年目想定 約358万/年</p></div>
+    <div class="card"><strong>UE</strong><p class="note">セッション・WS。新規・今後設計。4年目想定 約120万/年</p></div>
+    <div class="card"><strong>外部ウェルネス連携</strong><span class="tag t-amber" style="margin-top:6px;">構想段階・数字未計上</span><p class="note">パートナー（オーナー様）の農園プロダクト＝お茶・オイル等の物販＋デトックス系の体験プログラム。神社カフェ空間と親和。</p></div>
   </div>
-  <div class="callout c-amber">
-    <strong>ルーシーは現Excelに行が無い</strong>＝③に新ライン（香り蒸し施術＋オイル物販）として追加する余地。
-    神社カフェ空間との相性が良く、<strong>②(法人の場)×③(個人の技)のクロス収益</strong>を作れる可能性。ただし完全に新規＝数字は構想段階。
-  </div>
-
+  <div class="callout c-amber"><strong>外部ウェルネス連携は現Excelに数字なし＝構想段階</strong>。
+    <ul style="margin:6px 0;">
+      <li><strong>長田さんには本日まだ共有していない前段階</strong>。本資料では概念のみ。</li>
+      <li>昌美さん・藤原さんが<strong>6/13-14に体験予定</strong>。そこで質感を掴んでから具体化する。</li>
+      <li>神社・カフェ空間との相性が良く、②(法人の場)×③(個人の技)のクロス収益を作れる可能性のある「翼」。</li>
+    </ul></div>
   <h3>このパターンの構造的な注意</h3>
   <div class="callout c-red">
     <ul style="margin:6px 0;">
       <li><strong>③は「昌美 個人事業」＝SATOWA法人とは別主体</strong>。③の黒字は法人の与信・返済能力に<strong>直接は寄与しない</strong>（個人→法人への場所代/マージンの形でのみ法人に入る）。</li>
-      <li>③は<strong>昌美さんの時間・集客力・認定スキルに全依存</strong>。理事長報酬を学童から0にして「クォンタムで稼ぐ」設計＝③が立ち上がらないと昌美さんの生活が成り立たない。</li>
-      <li>UE・ディマティーニ・ルーシーは<strong>いずれも実績0→1</strong>。当たれば大きいが、計画の「土台」ではなく「翼」。</li>
-    </ul>
-  </div>
+      <li>③は<strong>昌美さんの時間・集客力・認定スキルに全依存</strong>。理事長報酬を学童から0にして「個人事業で稼ぐ」設計＝③が立ち上がらないと昌美さんの生活が成り立たない。</li>
+      <li>個人事業群は<strong>いずれも実績0→1</strong>。当たれば大きいが、計画の「土台」ではなく「翼」。</li>
+    </ul></div>
 </section>
 
-<!-- ============ TAB 6 銀行 ============ -->
-<section class="tab" id="t6">
+<!-- t6 -->
+<section class="tab grp-keiei" id="t6">
   <h2>銀行・財務プロとしての分析</h2>
-  <div class="lead">
-    三菱UFJは5/29に「<strong>正しい情報で／節税目的のみの融資は不可／事業性が回ることが前提</strong>」を繰り返した。
-    銀行は<strong>「実績」と「返済原資の堅さ」</strong>でしか見ない。ここでは各事業を銀行の目線で<strong>査定し直す</strong>。
-  </div>
-
+  <div class="lead">三菱UFJは5/29に「<strong>正しい情報で／節税目的のみの融資は不可／事業性が回ることが前提</strong>」を繰り返した。銀行は<strong>「実績」と「返済原資の堅さ」</strong>でしか見ない。各事業を銀行の目線で<strong>査定し直す</strong>。</div>
   <h3>銀行から見た「収入の堅さ」格付け</h3>
   <table>
     <tr><th class="l">事業</th><th class="l">銀行の見方</th><th class="l">与信への寄与</th></tr>
     <tr><td class="l">父の既存賃料（松戸10戸・もがみ）</td><td class="l"><span class="tag t-green">実績あり</span>R6実績ベース</td><td class="l">◎ 高い（返済原資の本命）</td></tr>
     <tr><td class="l">新築の賃貸4戸</td><td class="l"><span class="tag t-blue">堅め</span>物理的に貸せるが新築・テナント未確定</td><td class="l">○ 中〜高</td></tr>
     <tr><td class="l">学童保育</td><td class="l"><span class="tag t-amber">0→1</span>未開業・プレミアム価格の稼働は未知</td><td class="l">△ 低い（計画の説得力次第）</td></tr>
-    <tr><td class="l">神社事業（お守り/おみくじAI/お石/滝行/風水）</td><td class="l"><span class="tag t-red">0→1</span>実績ゼロ・按分未確定</td><td class="l">× ほぼ評価されない</td></tr>
-    <tr><td class="l">UE・ディマティーニ・ルーシー（③）</td><td class="l"><span class="tag t-red">0→1・個人</span>個人事業かつ未実績</td><td class="l">× 法人与信に不算入</td></tr>
+    <tr><td class="l">神社事業</td><td class="l"><span class="tag t-red">0→1</span>実績ゼロ・按分未確定</td><td class="l">× ほぼ評価されない</td></tr>
+    <tr><td class="l">個人事業（UE・ディマ・外部連携）</td><td class="l"><span class="tag t-red">0→1・個人</span>個人事業かつ未実績</td><td class="l">× 法人与信に不算入</td></tr>
   </table>
-
   <h3>銀行の「保守ケース」を自分で先に作る</h3>
-  <div class="callout c-amber">
-    銀行は楽観値を割り引く。<strong>銀行が実際に見る絵＝「学童（赤字立上）＋賃貸（黒字）」だけ</strong>で、神社・個人事業は<strong>ゼロ評価</strong>しがち。
-    この「保守ケース」で<strong>返済が回るか</strong>を、こちらから先に提示するのが信頼の作り方。
-  </div>
+  <div class="callout c-amber">銀行は楽観値を割り引く。<strong>銀行が実際に見る絵＝「学童（赤字立上）＋賃貸（黒字）」だけ</strong>で、神社・個人事業は<strong>ゼロ評価</strong>しがち。この保守ケースで<strong>返済が回るか</strong>をこちらから先に提示するのが信頼の作り方。</div>
   <table>
     <tr><th class="l">返済原資の考え方</th><th class="l">中身</th></tr>
     <tr><td class="l"><strong>本線：マスターリース構造</strong></td><td class="l">父が建物を建て→SATOWA法人へ賃貸。<strong>借入の返済原資＝父個人の賃料収入</strong>（新築賃料＋既存松戸・もがみ）。法人/学童の事業性とは別レイヤー。</td></tr>
-    <tr><td class="l">DSCRの確認</td><td class="l">「堅い収入（賃貸＋父既存）÷年間返済額」が<strong>1.2以上</strong>出るか。ここが銀行の生命線。神社・個人事業を足さずに成立させたい。</td></tr>
+    <tr><td class="l">DSCRの確認</td><td class="l">「堅い収入（賃貸＋父既存）÷年間返済額」が<strong>1.2以上</strong>出るか。ここが銀行の生命線。神社・個人事業を足さず成立させたい。</td></tr>
     <tr><td class="l">学童の早期赤字</td><td class="l">返済原資ではなく<strong>運転資金リスク</strong>として扱う。補助金＋自己資金（実質負担2,129万）で吸収する計画を明示。</td></tr>
   </table>
-
   <h3>結論：銀行への見せ方は「2段構え」</h3>
   <div class="grid2">
-    <div class="card" style="border-top:3px solid var(--navy);">
-      <h4>① 本編（融資審査用）</h4>
-      <p class="note"><strong>保守ケースで返済可能</strong>を証明。<br>学童＋賃貸＋父の既存収入だけでDSCRを通す。0→1事業は<strong>一切返済前提にしない</strong>。「正しい情報で」に真正面から応える。</p>
-    </div>
-    <div class="card" style="border-top:3px solid var(--amber);">
-      <h4>② 別紙（アップサイド）</h4>
-      <p class="note">神社事業・UE・ディマティーニ・ルーシーは<strong>「成長オプション」</strong>として別紙で提示。<br>「当たれば返済が楽になるが、無くても返せる」という<strong>余裕の見せ方</strong>に使う。</p>
-    </div>
+    <div class="card" style="border-top:3px solid var(--navy);"><h4>① 本編（融資審査用）</h4><p class="note"><strong>保守ケースで返済可能</strong>を証明。学童＋賃貸＋父の既存収入だけでDSCRを通す。0→1事業は<strong>一切返済前提にしない</strong>。「正しい情報で」に真正面から応える。</p></div>
+    <div class="card" style="border-top:3px solid var(--amber);"><h4>② 別紙（アップサイド）</h4><p class="note">神社事業・個人事業群は<strong>「成長オプション」</strong>として別紙で提示。「当たれば返済が楽になるが、無くても返せる」という<strong>余裕の見せ方</strong>に使う。</p></div>
   </div>
-  <div class="callout c-blue">
-    <strong>財務プロの一行</strong>：銀行は「夢の合計」では貸さない。「<strong>最悪でも返せる</strong>」で貸す。
-    だから<strong>パターンA/B/Cを“足し算”で見せず、「堅い核（賃貸＋父）→学童→オプション(神社/個人)」の順に層で見せる</strong>のが正解。
-  </div>
+  <div class="callout c-blue"><strong>財務プロの一行</strong>：銀行は「夢の合計」では貸さない。「<strong>最悪でも返せる</strong>」で貸す。だから<strong>A/B/Cを“足し算”で見せず、「堅い核（賃貸＋父）→学童→オプション(神社/個人)」の層で見せる</strong>のが正解。</div>
 </section>
 
-<!-- ============ TAB 7 討議 ============ -->
-<section class="tab" id="t7">
+<!-- t7 -->
+<section class="tab grp-keiei" id="t7">
   <h2>今夜の討議論点（4名）</h2>
   <p class="note">長田さん（校長）・昌美さん（理事長）・玄氣（事務局）・藤原さん（國創りメンバー）で擦り合わせたい論点。</p>
-
-  <div class="disc"><div class="q">① 事業の定義：どのパターンを「正」とするか<span class="badge">最重要</span></div>
-    <p>学童“単体”黒字化（A）を目指すのか、神社カフェ合算（B）を基準にするのか、個人事業まで含めた全体（C）で語るのか。<strong>銀行・対外的にどの絵を“本編”にするか</strong>を決める。</p>
-  </div>
-
-  <div class="disc"><div class="q">② 6/6「正直視野」：学童赤字をどう開示するか<span class="badge">haru強調と直結</span></div>
-    <p>「<strong>学童だけでは利益が見えない</strong>」を、行き詰まりとして正直に出すか。haruメッセージ＝「行き詰まりを正直に出した時こそ仲間が現れる」。
-    出すなら<strong>「だからこそ②③で支える3層設計にした」</strong>という建付けまでセットで語れるか。</p>
-  </div>
-
-  <div class="disc"><div class="q">③ 0→1事業群を銀行にどう見せるか</div>
-    <p>神社事業・UE・ディマティーニ・ルーシーを<strong>「返済前提」にせず「アップサイド」に切り分ける</strong>2段構え（タブ6）でよいか。保守ケース（学童＋賃貸＋父）でDSCRが立つかを最優先で詰める。</p>
-  </div>
-
-  <div class="disc"><div class="q">④ 藤原さん新法人＝学童テナント案との整合<span class="badge">藤原さん</span></div>
-    <p>「藤原さんが新法人を設立し学童経営を担い、里和（昌美）の物件にテナント入り」する案は、<strong>3パターンのどれと整合するか</strong>。
-    テナント構造にすると①学童の損益主体が藤原さん法人に移り、SATOWA法人(里和)は<strong>②法人その他＋賃料収入</strong>側に純化する——これは銀行的にむしろ分かりやすい可能性。要討議。</p>
-  </div>
-
-  <div class="disc"><div class="q">⑤ 役割・報酬と黒字化タイミングの連動</div>
-    <p>理事長＝昌美(学童0/③で稼ぐ)・校長＝長田さん(10万+10%)・事務局＝玄氣(12万+7%)。
-    <strong>立上2年の赤字期に、この報酬を据え置くのか／別原資（②賃料・③個人）から出すのか</strong>。各人の生活と整合するか。</p>
-  </div>
-
-  <div class="disc"><div class="q">⑥ 神社事業の按分と「神社カフェ」業態の設計</div>
-    <p>②の利益の柱＝神社事業の<strong>収益按分（法人 vs 神社本体）を業務委託で明文化</strong>できるか。
-    「カフェ」業態は現計画に独立ラインが無い＝<strong>席数・原価・回転率のPL設計</strong>を誰がいつ作るか。</p>
-  </div>
-
-  <div class="callout c-green">
-    <strong>今夜のゴール（案）</strong>：3パターンのうち<strong>「本編＝B（学童＋神社＝SATOWA法人）／銀行向け保守核＝学童＋賃貸＋父／アップサイド＝C」</strong>という<strong>層構造の合意</strong>を取り、
-    6/6報告会で「学童単体赤字」を正直に出す/出さないの方針を決める。
-  </div>
+  <div class="disc"><div class="q">① 事業の定義：どのパターンを「正」とするか<span class="badge">最重要</span></div><p>学童“単体”黒字化（A）か、神社カフェ合算（B）か、全体（C）か。<strong>銀行・対外的にどの絵を“本編”にするか</strong>を決める。</p></div>
+  <div class="disc"><div class="q">② 6/6「正直視野」：学童赤字をどう開示するか<span class="badge">haru強調と直結</span></div><p>「<strong>学童だけでは利益が見えない</strong>」を行き詰まりとして正直に出すか。出すなら<strong>「だからこそ②③で支える3層設計にした」</strong>までセットで語れるか。</p></div>
+  <div class="disc"><div class="q">③ 0→1事業群を銀行にどう見せるか</div><p>神社事業・個人事業を<strong>「返済前提」にせず「アップサイド」に切り分ける</strong>2段構え（経営タブ6）でよいか。保守ケース（学童＋賃貸＋父）でDSCRが立つかを最優先で詰める。</p></div>
+  <div class="disc"><div class="q">④ 藤原さん新法人＝学童テナント案との整合<span class="badge">藤原さん</span></div><p>テナント構造にすると①学童の損益主体が藤原さん法人に移り、SATOWA法人(里和)は<strong>②法人その他＋賃料収入</strong>側に純化する——これは銀行的にむしろ分かりやすい可能性。要討議。</p></div>
+  <div class="disc"><div class="q">⑤ 役割・報酬と黒字化タイミングの連動</div><p>理事長＝昌美(学童0/③で稼ぐ)・校長＝長田さん(10万+10%)・事務局＝玄氣(12万+7%)。<strong>立上2年の赤字期に、この報酬を据え置くのか／別原資（②賃料・③個人）から出すのか</strong>。各人の生活と整合するか。</p></div>
+  <div class="disc"><div class="q">⑥ 神社事業の按分と「神社カフェ」業態の設計</div><p>②の利益の柱＝神社事業の<strong>収益按分（法人 vs 神社本体）を業務委託で明文化</strong>できるか。「カフェ」業態は<strong>席数・原価・回転率のPL設計</strong>を誰がいつ作るか。</p></div>
+  <div class="callout c-green"><strong>今夜のゴール（案）</strong>：3パターンのうち<strong>「本編＝B（学童＋神社＝SATOWA法人）／銀行向け保守核＝学童＋賃貸＋父／アップサイド＝C」</strong>という<strong>層構造の合意</strong>を取り、6/6報告会で「学童単体赤字」を正直に出す/出さないの方針を決める。</p></div>
 </section>
 
 </main>
 
 <footer>
-  SATOWA 経営計画ディスカッション資料 v1.0　|　2026-06-02　|　数値は事業計画v2.0（シナリオ正式化）に基づく。パターンA・C及びルーシー連携の試算は討議用たたき台（概算）。<br>
-  正本Excel：SATOWA西日暮里_事業計画v2.0_シナリオ正式化（玄氣Drive 學童保育/）／分析ノート：vault 2026-06-02_事業計画v2.0_ヘルスチェック＋シナリオ分析_v1.0
+  SATOWA 長田さんMTG 統合資料 v1.0　|　2026-06-02　|　［共有］リトリートα以降の歩みと新スキーム ＋ ［経営］事業計画v2.0と黒字化3パターン。<br>
+  数値は事業計画v2.0（シナリオ正式化）に基づく。パターンA・C及び外部ウェルネス連携の試算は討議用たたき台（概算・一部構想段階）。
 </footer>
 
 <script>
-const bar=document.getElementById('tabbar');
-bar.addEventListener('click',e=>{
-  const b=e.target.closest('button'); if(!b)return;
-  document.querySelectorAll('.tabbar button').forEach(x=>x.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');
-  document.getElementById(b.dataset.t).classList.add('active');
+const gbar=document.getElementById('groupbar');
+const bars={share:document.getElementById('bar-share'),keiei:document.getElementById('bar-keiei')};
+function showGroup(g){
+  document.querySelectorAll('#groupbar button').forEach(b=>b.classList.toggle('active',b.dataset.g===g));
+  bars.share.hidden=(g!=='share'); bars.keiei.hidden=(g!=='keiei');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  // activate first sub-tab of the group
+  const firstBtn=bars[g].querySelector('button');
+  bars[g].querySelectorAll('button').forEach(b=>b.classList.remove('active'));
+  firstBtn.classList.add('active');
+  document.getElementById(firstBtn.dataset.t).classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
-});
+}
+gbar.addEventListener('click',e=>{const b=e.target.closest('button');if(b)showGroup(b.dataset.g);});
+function bindBar(bar){
+  bar.addEventListener('click',e=>{
+    const b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById(b.dataset.t).classList.add('active');
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
+bindBar(bars.share); bindBar(bars.keiei);
 </script>
 </body>
 </html>
